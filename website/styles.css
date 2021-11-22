@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: fantasy;
+}
+header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    line-height: 60px;
+    height: 110px;
+    background-color: #ec0f6b;
+    padding: 10px 0;
+}
+
+.menu-wrap {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 25px;
+}
+.me-img {
+    height: 100px;
+}
+.menu-icon {
+    font-size: 3em;
+    color: #ffffff;
+    line-height: 80px;
+}
+nav {
+    position: absolute;
+    background-color: rgb(44, 57, 95);
+    top: 70px;
+    left: 0;
+    width: 100%;
+}
+nav ul {
+    list-style-type: none;
+    max-height: 0px;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+nav ul li {
+    padding: 0 7px;
+}
+nav ul li a {
+    display: inline-block;
+    padding: 12px;
+    color: #010407;
+    text-decoration: none;
+    letter-spacing: 0.06em;
+}
+nav ul li a:hover, nav ul li a:focus {
+    color: #3786cf;
+}
+#checkbox {
+    display: none;
+}
+#checkbox:checked ~ nav ul {
+    max-height: 300px;
+    padding: 15px 0;
+    transition: all 0.5s;
+}
+
+@media (min-width: 800px) { 
+    .menu-icon {
+        display: none;
+
+    }
+    nav {
+        position: 30px center;
+        top: -10px;
+        background-color: transparent;
+    }
+    nav ul {
+        max-height: 80px;
+        padding: 15px 0;
+        text-align: right;
+    }
+    nav ul li {
+        display: inline-flex;
+        padding-left: 30px;
+    }
+}
+
+h1{
+    font-size: 3em;
+    text-align: center;
+    padding: 80px 50px 40px;
+    color: #0a0c0e;
+    line-height: 2;
+}
+h2{
+    font-size: 3em;
+    text-align: center;
+    padding: 80px 50px 40px;
+    color: #0a0c0e;
+    line-height: 2;
+}
+h3{
+    font-size: 3em;
+    text-align: center;
+    padding: 80px 50px 40px;
+    color: #0a0c0e;
+    line-height: 2;
+}
+h4{
+    font-size: 3em;
+    text-align: center;
+    padding: 80px 50px 40px;
+    color: #0a0c0e;
+    line-height: 2;
+}
+h5{
+    font-size: 3em;
+    text-align: center;
+    padding: 80px 50px 40px;
+    color: #0a0c0e;
+    line-height: 2;
+}
+h6{
+    font-size: 3em;
+    text-align: center;
+    padding: 80px 50px 40px;
+    color: #0a0c0e;
+    line-height: 2;
+}
+p{
+    line-height: 1.6;
+    font-size: 1.5em;
+    padding: 0 40px;
+    text-align: center;
+    color: #010407;
+}
+section {
+    height: 150vh;
+    border: 1px solid block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    
+    background-size: cover; /* Add this line */
+    background-position: center center; /* Add this line */
+    background-repeat: no-repeat; /* Add this line */
+    background-attachment: fixed; /* Add this line */
+}
+
+#home .profile-img {
+    width: 500px;
+    border-radius: 100%;
+}
+
+footer {
+    text-align: center;
+    padding: 50px;
+}
+
+#home h1 {
+    font-size: 5em;
+}
+
+section h2 {
+    font-size: 3em;
+}
+
+section h3 {
+    font-size: 3em;
+}
+section h4{
+    font-size: 3em;
+}
+section h5{
+    font-size: 3em;
+}
+section h6{
+    font-size: 3em;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Add everything below here */
+
+#home {
+    background-image: linear-gradient(rgba(168, 207, 219, 0.75),rgba(150, 204, 218, 0.75))url('nature.jpg');
+}
+#education{
+    background-image: linear-gradient(rgba(35, 241, 52, 0.75),rgba(31, 194, 66, 0.75)),url('sun.jpg');
+}
+#About {
+    background-image: linear-gradient(rgba(7, 95, 117, 0.75),rgba(59, 158, 189, 0.75)), url('nature.jpg');
+}
+#Technicalskills{
+    background-image: linear-gradient(rgba(192, 122, 186, 0.75),rgba(184, 111, 156, 0.75)),url('beach.jpg');
+}
+#Projects{
+    background-image: linear-gradient(rgba(183, 209, 90, 0.75),rgba(168, 204, 83, 0.75)),url('falls.jpg');
+} 
+#contact {
+    background-image: linear-gradient(rgba(185, 139, 139, 0.75),rgba(180, 161, 172, 0.75)), url('lavendar.jpg');
+}
